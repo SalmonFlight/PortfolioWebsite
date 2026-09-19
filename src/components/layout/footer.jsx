@@ -10,7 +10,7 @@ const Footer = () => {
             © {currentYear} Aaron. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-500">
-            <a href="https://github.com/FeiDuanFish" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
+            <a href="https://github.com/SalmonFlight" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
               GitHub
             </a>
             <a href="https://www.linkedin.com/in/brayden-aaron-santoso-351010434/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">

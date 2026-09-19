@@ -60,7 +60,7 @@ const Contact = () => {
               <p className="text-sm text-slate-500 mb-3">Or connect with me:</p>
               <div className="flex gap-6">
                 <a 
-                  href="https://github.com/FeiDuanFish" 
+                  href="https://github.com/SalmonFlight" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-slate-400 hover:text-white transition-colors text-sm"
