@@ -1,0 +1,143 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0B0E14] text-white antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0B0E14];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-600;
+  }
+
+  ::selection {
+    @apply bg-amber-500/30 text-white;
+  }
+
+  *:focus-visible {
+    @apply outline outline-2 outline-amber-400 outline-offset-2;
+  }
+
+  a {
+    @apply transition-all duration-200;
+  }
+}
+
+.grid-overlay {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.btn-primary {
+  @apply bg-amber-500 text-[#0B0E14] font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-amber-400 hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply border border-slate-700 text-slate-300 font-medium px-6 py-3 rounded-lg transition-all duration-200 hover:border-slate-500 hover:text-white hover:-translate-y-0.5;
+}
+
+/* ---------- Animated Gradient Mesh ---------- */
+.mesh-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.mesh-blob-1 {
+  width: 55vw;
+  height: 55vw;
+  top: -15%;
+  left: -10%;
+  background: radial-gradient(circle at center, #1e3a8a 0%, transparent 70%);
+  animation: mesh-drift-1 28s ease-in-out infinite;
+}
+
+.mesh-blob-2 {
+  width: 50vw;
+  height: 50vw;
+  top: 25%;
+  right: -15%;
+  background: radial-gradient(circle at center, #0f766e 0%, transparent 70%);
+  animation: mesh-drift-2 34s ease-in-out infinite;
+}
+
+.mesh-blob-3 {
+  width: 45vw;
+  height: 45vw;
+  bottom: -10%;
+  left: 20%;
+  background: radial-gradient(circle at center, #7c2d12 0%, transparent 70%);
+  opacity: 0.22;
+  animation: mesh-drift-3 40s ease-in-out infinite;
+}
+
+.mesh-blob-4 {
+  width: 40vw;
+  height: 40vw;
+  top: 45%;
+  left: 40%;
+  background: radial-gradient(circle at center, #4c1d95 0%, transparent 70%);
+  opacity: 0.18;
+  animation: mesh-drift-4 32s ease-in-out infinite;
+}
+
+@keyframes mesh-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(8%, 6%) scale(1.08); }
+  66%      { transform: translate(-4%, 10%) scale(0.95); }
+}
+
+@keyframes mesh-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(-10%, 8%) scale(1.05); }
+  66%      { transform: translate(6%, -6%) scale(0.97); }
+}
+
+@keyframes mesh-drift-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(10%, -8%) scale(1.1); }
+}
+
+@keyframes mesh-drift-4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-8%, -10%) scale(1.06); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob {
+    animation: none;
+  }
+}
