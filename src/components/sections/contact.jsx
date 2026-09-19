@@ -12,7 +12,6 @@ const Contact = () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      // Fallback for older browsers
       const textarea = document.createElement('textarea');
       textarea.value = email;
       document.body.appendChild(textarea);
@@ -35,7 +34,6 @@ const Contact = () => {
           </p>
 
           <div className="mt-8 space-y-6">
-            {/* Email with Copy Button */}
             <div>
               <p className="text-sm text-slate-500 mb-2">Email me directly:</p>
               <div className="flex items-center gap-3">
@@ -55,7 +53,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Social Links */}
             <div className="pt-4 border-t border-slate-800">
               <p className="text-sm text-slate-500 mb-3">Or connect with me:</p>
               <div className="flex gap-6">
@@ -68,7 +65,7 @@ const Contact = () => {
                   GitHub
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/brayden-aaron-santoso-351010434/" 
+                  href="https://www.linkedin.com/in/brayden-aaron-santoso/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-slate-400 hover:text-white transition-colors text-sm"

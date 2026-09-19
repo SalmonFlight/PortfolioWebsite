@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="https://github.com/SalmonFlight" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/brayden-aaron-santoso-351010434/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
+            <a href="https://www.linkedin.com/in/brayden-aaron-santoso/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
               LinkedIn
             </a>
           </div>
