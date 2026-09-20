@@ -30,8 +30,8 @@ const About = () => {
 
           <p className="mt-4 text-slate-400 leading-relaxed">
             Outside of code, I'm learning Mandarin and can follow spoken Japanese.
-            I'm looking for a year-round SWE internship. Winter or Summer  where
-            I can write real production code and learn from people who've been
+            I'm looking for internships. Winter or Summer where 
+            I can gain new experiences and skills by learning from people who've been
             doing this longer than I have.
           </p>
         </div>

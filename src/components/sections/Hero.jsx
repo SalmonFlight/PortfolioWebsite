@@ -29,12 +29,12 @@ const Hero = () => {
 
         {/* Role / Tech Stack */}
         <p className="mt-6 text-xl sm:text-2xl text-slate-300 max-w-2xl leading-relaxed">
-          Full-stack dev · Python/Django · React/Tailwind
+          Full-stack dev · Python/Django · Tailwind
         </p>
 
         {/* Availability */}
         <p className="mt-4 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
-          Open to SWE internships, Winter or Summer start.
+          Open to internships of any kind, Winter or Summer start.
         </p>
 
         {/* CTA Buttons */}
